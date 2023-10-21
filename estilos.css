@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: helvetica;
+  font-weight: normal;
+  color: #333;
+}
+
+.Formulario{
+  text-align: center;
+}
+
+.bordeSup{
+  background-color: #d6d6d6;
+	color: white;
+  padding-top: 10px;
+  text-align: center;
+  width: 1400px;
+  margin: 0%;
+  margin: auto;
+}
+
+.lineaegra{
+  width: 1200px;
+  background-color: blue;
+}
+
+.Encabezado{
+  padding-left: 30px;
+	text-align: center;
+  width: 1400px;
+  margin: 0%;
+  margin: auto;
+}
+
+.recEncabezado{
+  width: 80px;
+  height: 20px;
+  background-color: #631233;
+}
+
+
+
+
+h2{
+	padding-left: 30px;
+  color: #631233;
+}
+.contenedor{
+	border:2px #333 dotted;
+	padding: 20px;
+}
+#contenedor_elementos1{
+	vertical-align: top;
+	display: inline-block;
+  padding-left: 30px;
+}
+#contenedor_elementos2{
+	vertical-align: top;
+	display: inline-block;
+  padding-left: 10px;
+}
+#contenedor_elementos3{
+	vertical-align: top;
+	display: inline-block;
+  padding-left: 10px;
+	padding-top: 100px;
+}
+#contenedor_elementos4{
+	vertical-align: top;
+	display: inline-block;
+  padding-left: 30px;
+}
+/* input[type=text]{ */
+	.campos{
+	padding: 10px;
+	margin:3px;
+	padding: 5px;
+	width: 350px;
+	height: 40px;
+	border-radius: 5px;
+}
+.titles {
+	margin-right:100%;
+	padding: 5px;
+	
+}
+.campos2{
+	padding: 10px;
+	margin:3px;
+	padding: 5px;
+	width: 1350px;
+}
+textarea{
+	width: 1300px;
+	height: 200px;
+	padding: 10px;
+	margin: 3px;
+	resize: none;
+	font-family: helvetica;
+	font-size: 14px;
+	color: #333;
+	line-height: 24px;
+}
+.boton{
+	border: 0px;
+	border-radius: 5px;
+	color: white;
+	background-color: #13322c;
+	padding: 10px 30px;
+	margin: 3px;
+	width: 100px;
+	margin-right: 96%;
+}
+.Boton2{
+	border: 0px;
+	border-radius: 5px;
+	color: white;
+	background-color: #631233;
+	padding: 10px 10px;
+	margin: 3px;
+	width: 200px;
+	font-size: 18px;
+	margin-right: 45%;
+  margin-top: 10px;
+}
+
+.BarraFinal{
+  background-color: #631233;
+  color: white;
+  padding-top: 20px;
+  text-align: center;
+  width: 1400px;
+  margin: 0%;
+  margin: auto;
+}
+
+
+/* <button id="searchButton" class="btn btn-primary pull-right" type="submit" data-ember-action="" data-ember-action-319="319">
+					<span class="icon icon-search" style="margin-right: 8px;"></span>
+					Buscar
+				</button> */

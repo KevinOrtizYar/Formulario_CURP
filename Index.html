@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Validacion</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  
+	<div class="CentrarContenedor">
+  <div class="bordeSup">
+    <img src="images/logo.png" alt="">
+		<br>
+  </div>
+  </div>
+
+<div class="CentrarContenedor">
+  <div class="Encabezado">
+    <br>
+    <h1>Datos generales del alumno</h1>
+    <br>
+    <hr class="lineaNegra">
+    <div class="recEncabezado">
+    </div>
+  </div>
+</div>
+  <br><br>
+
+	<div class="CentrarContenedor">
+		<div class="Formulario">
+  <h2 style="margin-right: 47%;">*Campos obligatorios</h2>
+	<br>
+
+		<div id="contenedor_elementos1">
+			<form action="RespuestaValida.html" name="formulariocomentarios1" method="get">
+				<h3 class="titles">CURP:</h3>
+				<input type="CURP" name="CURP" id="CURP" class="campos" /><br><br>
+				<h3 class="titles">Nombre*:</h3> <br>
+				<input type="text" name="nombre" id="nombre" class="campos" required /><br><br>
+				<h3 style="margin-right:46%;">Correo electronico*:</h3> <br>
+				<input type="email" name="email" id="email" class="campos" /><br><br>
+				<h3 style="margin-right:60%;">Telefono fijo:</h3><br>
+				<input type="tel" name="telefonofijo" id="telefonofijo" class="campos" /><br><br>
+			</form>
+		</div>
+
+		<div id="contenedor_elementos2">
+			<form action="RespuestaValida.html" name="formulariocomentarios" method="get">
+				<br>
+				<button id="btn_consulta" class="Boton2" type="button">Consultar CURP 🔍︎</button>
+				<br><br>
+				<h3  style="margin-right:50%;">Primer apellido*:</h3> <br>
+				<input type="text" name="nombre" id="nombre" class="campos" required style="margin-top: 3%;"/><br><br>
+				<h3  class="titles">Sexo:</h3> <br>
+				<select class="campos" name="sexo" style="margin-top: -1.5%">
+					<option value="value1">Seleccione</option>
+					<option value="value2" selected>Hombre</option>
+					<option value="value3">Mujer</option>
+				</select>
+				<br><br>
+				<h3  class="titles">Celular:</h3>
+				<input type="tel" name="telefonofijo" id="telefonofijo" class="campos" style="margin-top: 14px;"/><br>
+				<br>
+			</form>
+		</div>
+
+
+		<div id="contenedor_elementos3">
+			<form action="RespuestaValida.html" name="formulariocomentarios" method="get">
+				<h3 style="margin-right:50%;     margin-top: 3%;">Segundo apellido:</h3><br>
+				<input type="CURP" name="CURP" id="CURP" class="campos" /><br><br><br>
+				<h3 style="margin-right:40%;">Fecha de nacimiento</h3>
+				<input type="date" class="campos" id="fecha">
+				<br>
+			</form>
+		</div>
+
+		<div id="contenedor_elementos4">
+			<form action="RespuestaValida.html" name="formulariocomentarios" method="get">
+				<h3 class="titles">Asunto*:</h3>
+				<textarea name="asunto" id="asunto" class="campos2"></textarea>
+				<br>
+				<button id="btn_enviar" class="boton" type="button">Enviar</button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$("#btn_consulta").click(function () {
+
+			// validacion asunto
+			if ($("#CURP").val().trim() == '') {
+				alert("Escribe tu CURP ");
+				$("#asunto").focus();
+				return 0;
+			}
+
+			alert('Estos son los datos del CURP: '+ $("#CURP").val());
+			location.reload(); //recrga la pagina
+
+		});
+
+		$("#btn_enviar").click(function () {
+
+// validacion nombre
+if ($("#nombre").val().trim() == '') {
+	alert("Escribe tu nombre ");
+	$("#nombre").focus();
+	return 0;
+}
+
+// validacion Correo
+if ($("#email").val().trim() == '') {
+	alert("Escribe correctamente tu email ");
+	$("#email").focus();
+	return 0;
+}
+
+
+// validacion asunto
+if ($("#asunto").val().trim() == '') {
+	alert("Escribe tu asunto ");
+	$("#asunto").focus();
+	return 0;
+}
+
+
+$("#formulariocomentarios").submit();
+alert('Gracias se enviaran sus datos....');
+location.reload(); //recrga la pagina
+
+});
+
+	</script>
+
+<br><br>
+<div class="CentrarContenedor2">
+  <div class="BarraFinal">
+    <h3>Kevin Nahuel Ortiz Yarzon <br>7SB  <br> Programación WEB</h3>
+    <br>
+  </div>
+  </div>
+</body>
+
+</html>
